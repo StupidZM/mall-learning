@@ -48,6 +48,8 @@ public class EsProductController {
         return CommonResult.success(null);
     }
 
+
+
     @ApiOperation(value = "根据id创建商品")
     @RequestMapping(value = "/create/{id}", method = RequestMethod.POST)
     @ResponseBody

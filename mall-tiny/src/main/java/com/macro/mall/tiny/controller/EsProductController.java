@@ -31,7 +31,6 @@ public class EsProductController {
         int count = esProductService.importAll();
         return CommonResult.success(count);
     }
-
     @ApiOperation(value = "根据id删除商品")
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     @ResponseBody
@@ -39,7 +38,6 @@ public class EsProductController {
         esProductService.delete(id);
         return CommonResult.success(null);
     }
-
     @ApiOperation(value = "根据id批量删除商品")
     @RequestMapping(value = "/delete/batch", method = RequestMethod.POST)
     @ResponseBody
@@ -47,9 +45,6 @@ public class EsProductController {
         esProductService.delete(ids);
         return CommonResult.success(null);
     }
-
-
-
     @ApiOperation(value = "根据id创建商品")
     @RequestMapping(value = "/create/{id}", method = RequestMethod.POST)
     @ResponseBody

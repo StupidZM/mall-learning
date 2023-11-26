@@ -31,7 +31,7 @@ public class EsProductController {
         int count = esProductService.importAll();
         return CommonResult.success(count);
     }
-    @ApiOperation(value = "根据id删除商品")
+    @ApiOperation(value = "根据id删除商品呀")
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<Object> delete(@PathVariable Long id) {
